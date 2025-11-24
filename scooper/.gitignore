@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.wacz
+.DS_Store
+*.log
+
