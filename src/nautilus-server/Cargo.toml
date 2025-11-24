@@ -27,6 +27,7 @@ nsm_api = { git = "https://github.com/aws/aws-nitro-enclaves-nsm-api.git/", rev 
 bcs = "0.1.6"
 lazy_static = "1.4"
 uuid = { version = "1.0", features = ["v4"] }
+urlencoding = "2.1"
 regex = { version = "1.5", optional = true }
 
 sui-sdk-types = { version = "0.1.0", features = ["serde", "hash"], optional = true }
@@ -37,3 +38,4 @@ seal-sdk = { git = "https://github.com/MystenLabs/seal", rev = "cdb6ddf104eca605
 weather-example = []
 twitter-example = ["regex"]
 seal-example = ["sui-crypto", "sui-sdk-types", "seal-sdk"]
+perma-ws = []

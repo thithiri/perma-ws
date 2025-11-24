@@ -21,6 +21,10 @@ mod apps {
     #[cfg(feature = "seal-example")]
     #[path = "seal-example/mod.rs"]
     pub mod seal_example;
+
+    #[cfg(feature = "perma-ws")]
+    #[path = "perma-ws/mod.rs"]
+    pub mod perma_ws;
 }
 
 pub mod app {
@@ -32,6 +36,9 @@ pub mod app {
 
     #[cfg(feature = "seal-example")]
     pub use crate::apps::seal_example::*;
+
+    #[cfg(feature = "perma-ws")]
+    pub use crate::apps::perma_ws::*;
 }
 
 pub mod common;

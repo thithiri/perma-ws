@@ -35,8 +35,11 @@ async fn main() -> Result<()> {
     }
 
     // Define your own restricted CORS policy here if needed.
-    let cors = CorsLayer::new().allow_methods(Any).allow_headers(Any);
-
+    let cors = CorsLayer::new()
+        .allow_origin(Any)
+        .allow_methods(Any)
+        .allow_headers(Any);
+    
     let app = Router::new()
         .route("/", get(ping))
         .route("/get_attestation", get(get_attestation))
