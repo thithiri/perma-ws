@@ -23,7 +23,7 @@ busybox ip link set dev lo up
 # Add a hosts record, pointing target site calls to local loopback
 echo "127.0.0.1   localhost" > /etc/hosts
 echo "127.0.0.64   api.weatherapi.com" >> /etc/hosts
-echo "127.0.0.65   scooper-production.up.railway.appa" >> /etc/hosts
+echo "127.0.0.65   scooper-production.up.railway.app" >> /etc/hosts
 echo "127.0.0.66   api.screenshotone.com" >> /etc/hosts
 echo "127.0.0.67   perma.ws" >> /etc/hosts
 echo "127.0.0.68   www.perma.ws" >> /etc/hosts

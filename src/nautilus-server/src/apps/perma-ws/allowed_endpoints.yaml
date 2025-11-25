@@ -1,7 +1,7 @@
 # External endpoints that the enclave is allowed to access. 
 endpoints:
   - api.weatherapi.com # replace with your own endpoints
-  - scooper-production.up.railway.appa # Scooper API endpoint
+  - scooper-production.up.railway.app # Scooper API endpoint
   - api.screenshotone.com # ScreenshotOne API endpoint
   - perma.ws # perma.ws API endpoint
   - www.perma.ws # perma.ws API endpoint
