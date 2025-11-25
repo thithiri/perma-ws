@@ -5,3 +5,5 @@ endpoints:
   - api.screenshotone.com # ScreenshotOne API endpoint
   - perma.ws # perma.ws API endpoint
   - www.perma.ws # perma.ws API endpoint
+  - perma-ws.storage.nami.cloud # for getting etag / blobId
+  - cache.screenshotone.com # for getting byte size of screenshot

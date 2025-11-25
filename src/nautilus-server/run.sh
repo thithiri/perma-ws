@@ -27,6 +27,8 @@ echo "127.0.0.65   scooper-production.up.railway.app" >> /etc/hosts
 echo "127.0.0.66   api.screenshotone.com" >> /etc/hosts
 echo "127.0.0.67   perma.ws" >> /etc/hosts
 echo "127.0.0.68   www.perma.ws" >> /etc/hosts
+echo "127.0.0.69   perma-ws.storage.nami.cloud" >> /etc/hosts
+echo "127.0.0.70   cache.screenshotone.com" >> /etc/hosts
 
 # == ATTENTION: code should be generated here that parses allowed_endpoints.yaml and populate domains here ===
 
@@ -50,6 +52,8 @@ python3 /traffic_forwarder.py 127.0.0.65 443 3 8102 &
 python3 /traffic_forwarder.py 127.0.0.66 443 3 8103 &
 python3 /traffic_forwarder.py 127.0.0.67 443 3 8104 &
 python3 /traffic_forwarder.py 127.0.0.68 443 3 8105 &
+python3 /traffic_forwarder.py 127.0.0.69 443 3 8106 &
+python3 /traffic_forwarder.py 127.0.0.70 443 3 8107 &
 
 # Listens on Local VSOCK Port 3000 and forwards to localhost 3000
 socat VSOCK-LISTEN:3000,reuseaddr,fork TCP:localhost:3000 &
